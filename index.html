@@ -15,106 +15,113 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Martel:wght@200;300;400;600;700;800;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <style>
-        article {
-            border: 1px solid #4a2b1a;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 10px;
-        }
-        h2, h3 {
-            font-family: "Roboto Slab", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-        p {
-            font-family: Alice;
-            font-weight: 400;
-            font-style: normal;
-        }
-        li {
-            font-family: Alice;
-            font-weight: 400;
-            font-style: normal;
-            color: #4a2b1a;
-        }
-    </style>
-
     <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4bb4dfed16.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background-color: #f9edcf;">
+<body>
+    <!-- TÍTULO DO SITE -->
     <h1 style="color: #4a2b1a; text-align: center; padding: 10px; font-family: Roboto Slab;"><span style="color: #f5c6bc;">~</span><span style="color: #c8dbba;">☆</span><span style="color: #68c8d0">★</span> Meu Portifólio <span style="color: #68c8d0">★</span><span style="color: #c8dbba;">☆</span><span style="color: #f5c6bc;">~</span></h1>
-    <hr style="height: 2px; border-width: 0; color: #4a2b1a; background-color: #4a2b1a">
-    <article style="background-color: #f5c6bc;">
-        <table>
-            <tr>
-                <th>
-                    <img src="ivo.png" alt="Minha foto" width="300" height="300">
-                </th>
-                <th>
-                    <h2 style="color: #4a2b1a; ">Quem sou eu?</h2>
-                    <p style="color: #4a2b1a; text-align:center;"><i>Meu nome é <strong>Ivo dos Santos Soares Junior</strong> e sou estudante<br> do segundo ano do Curso Técnico em Informática <br>(IFMA - Campus Açailândia).</i></p>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <p style="color: #4a2b1a; text-align:center;"><i>imagem real minha*</i></p>
-                </th>
-            </tr>
-        </table>
+    <hr>
+    <!-- QUEM SOU EU -->
+    <article id="article1">
+        <details>
+            <summary><h2>Quem sou eu?</h2></summary>
+            <table style="margin: auto">
+                <tr>
+                    <th>
+                        <img src="ivo.png" alt="Minha foto" width="300" height="300">
+                    </th>
+                    <th>
+                        
+                        <p><i>Meu nome é <strong>Ivo dos Santos Soares Junior</strong> e sou estudante<br> do segundo ano do Curso Técnico em Informática <br>(IFMA - Campus Açailândia).</i></p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p><i>imagem real minha*</i></p>
+                    </th>
+                </tr>
+            </table>
+        </details>
     </article>
-    <article style="background-color: #c8dbba;">
-        <h2 style="color: #4a2b1a">Minhas Qualidades</h2>
-        <ul>
-            <li><i>Tenho facilidade em aprender diversos conteúdos, especialmente na área de <strong>exatas e TI;</strong></i></li>
-            <li><i>Desenvolvo relacionamentos de um modo consideralvemente rápido;</i></li>
-            <li><i>Possuo conhecimento de diversas áreas como:</i></li>
+    <!-- MINHAS QUALIDADES -->
+    <article id="article2">
+        <details>
+            <summary><h2>Minhas Qualidades</h2></summary>
             <ul>
-                <li><i><strong>Matemática;</strong></i></li>
-                <li><i><strong>Programação;</strong></i></li>
-                <li><i><strong>Edição de vídeo;</strong></i></li>
-                <li><i><strong>Produção musical.</strong></i></li>
+                <li><i>Tenho facilidade em aprender diversos conteúdos, especialmente na área de <strong>exatas e TI;</strong></i></li>
+                <li><i>Desenvolvo relacionamentos de um modo consideralvemente rápido;</i></li>
+                <li><i>Possuo conhecimento de diversas áreas como:</i></li>
+                <ul>
+                    <li><i><strong>Matemática;</strong></i></li>
+                    <li><i><strong>Programação;</strong></i></li>
+                    <li><i><strong>Edição de vídeo;</strong></i></li>
+                    <li><i><strong>Produção musical.</strong></i></li>
+                </ul>
+                <li><i>Consigo me adaptar a diferentes situações.</i></li>
             </ul>
-            <li><i>Consigo me adaptar a diferentes situações.</i></li>
-        </ul>
+        </details>
     </article>
+    <!-- EXPERIÊNCIA -->
     <article style="background-color: #68c8d0;">
-        <h2 style="color: #4a2b1a;">Experiência</h2>
-        <p>Já tive e tenho muito contato com linguagens de programação durante o curso técnico, como: </p>
-        <table style="background-color: #4a2b1a; width: 50%; margin: auto;">
-            <tr bgcolor="#d6cead" align="center">
-                <th>
-                    <h3>Python</h3>
-                </th>
-                <th>
-                    <h3>Linguagem C</h3>
-                </th>
-                <th>
-                    <h3>Java</h3>
-                </th>
-                <th>
-                    <h3>HTML5</h3>
-                </th>
-            </tr>
-            <tr style="background-color: #e9dbb6; align-self: center;">
-                <th>
-                    <p>Intermediário</p>
-                </th>
-                <th>
-                    <p>Intermediário</p>
-                </th>
-                <th>
-                    <p>Iniciante</p>
-                </th>
-                <th>
-                    <p>Iniciante</p>
-                </th>
-            </tr>
-        </table>
+        <details>
+            <summary><h2>Experiência</h2></summary>
+            <p>Já tive e tenho muito contato com linguagens de programação durante o curso técnico, como: </p>
+            <table id="tabela_experiencia">
+                <tr bgcolor="#d6cead" align="center">
+                    <th>
+                        <h3><i class="fa-brands fa-python"></i> Python</h3>
+                    </th>
+                    <th>
+                        <h3><i class="fa-solid fa-c"></i> Linguagem C</h3>
+                    </th>
+                    <th>
+                        <h3><i class="fa-brands fa-java"></i> Java</h3>
+                    </th>
+                    <th>
+                        <h3><i class="fa-brands fa-html5"></i> HTML5</h3>
+                    </th>
+                </tr>
+                <tr style="background-color: #e9dbb6; align-self: center;">
+                    <th>
+                        <p>Intermediário</p>
+                    </th>
+                    <th>
+                        <p>Intermediário</p>
+                    </th>
+                    <th>
+                        <p>Iniciante</p>
+                    </th>
+                    <th>
+                        <p>Iniciante</p>
+                    </th>
+                </tr>
+            </table>
+        </details>
     </article>
+    <!-- CONTATO -->
     <article style="background-color: #e1bd5d;">
-        <h2 style="color: #4a2b1a;">Contato</h2>
+        <details>
+            <summary><h2>Contato</h2></summary>
+            <table id="tabela_contatos">
+                <tr>
+                    <th>
+                        <a href="https://github.com/IvoJunior0" target="_blank" title="Página do GitHub"><i class="fa-brands fa-github"></i></a>
+                    </th>
+                    <th>
+                        <a href="mailto:ivodossantossoaresjunior@gmail.com" target="_blank" title="Email para contato"><i class="fa-regular fa-envelope"></i></a>
+                    </th>
+                    <th>
+                        <a href="https://wa.me/559992272599" target="_blank" title="Número de WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </th>
+                    <th>
+                        <a href="https://www.instagram.com/ivo_jr.s/" target="_blank" title="Perfil do Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </th>
+                </tr>
+            </table>
+        </details>
     </article>
 </body>
 

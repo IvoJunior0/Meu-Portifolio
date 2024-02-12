@@ -1,0 +1,72 @@
+body {
+    background-color: #f9edcf;
+}
+hr {
+    height: 2px; 
+    border-width: 0; 
+    color: #4a2b1a; 
+    background-color: #4a2b1a;
+}
+/* ARTICLES */
+article {
+    border: 2px solid #4a2b1a;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+#article1 {
+    background-color: #f5c6bc;
+}
+#article2 {
+    background-color: #c8dbba;
+}
+h2, h3 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #4a2b1a;
+}
+p {
+    font-family: Alice;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a2b1a; 
+    text-align:center;
+}
+li {
+    font-family: Alice;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a2b1a;
+}
+/* TABELAS */
+#tabela_experiencia {
+    background-color: #4a2b1a; 
+    width: 60%; 
+    margin: auto;
+    height: 250px;
+}
+#tabela_contatos {
+    width: 100%
+}
+/* ICONES */
+.fa-github, .fa-envelope, .fa-whatsapp, .fa-instagram{
+    color: #4a2b1a;
+    font-size: 75px;
+    margin: 20px
+
+}
+.fa-python, .fa-c, .fa-java, .fa-html5 {
+    font-size: 50px;
+}
+summary {
+    list-style-type: '★~';
+    color: #4a2b1a;
+}
+details[open] summary {
+    list-style-type: '☆~';
+    color: #4a2b1a;
+}
+detail ul {
+    text-align: center;
+}
