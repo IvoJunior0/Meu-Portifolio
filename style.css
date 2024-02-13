@@ -1,72 +1,92 @@
-body {
-    background-color: #f9edcf;
-}
-hr {
-    height: 2px; 
-    border-width: 0; 
-    color: #4a2b1a; 
-    background-color: #4a2b1a;
-}
-/* ARTICLES */
-article {
-    border: 2px solid #4a2b1a;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-#article1 {
-    background-color: #f5c6bc;
-}
-#article2 {
-    background-color: #c8dbba;
-}
-h2, h3 {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    color: #4a2b1a;
-}
-p {
-    font-family: Alice;
-    font-weight: 400;
-    font-style: normal;
-    color: #4a2b1a; 
-    text-align:center;
-}
-li {
-    font-family: Alice;
-    font-weight: 400;
-    font-style: normal;
-    color: #4a2b1a;
-}
-/* TABELAS */
-#tabela_experiencia {
-    background-color: #4a2b1a; 
-    width: 60%; 
-    margin: auto;
-    height: 250px;
-}
-#tabela_contatos {
-    width: 100%
-}
-/* ICONES */
-.fa-github, .fa-envelope, .fa-whatsapp, .fa-instagram{
-    color: #4a2b1a;
-    font-size: 75px;
-    margin: 20px
+/* FONTE DA BARRA DE NAVEGAÇÃO */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* FONTE PARA O NOME NO CABEÇALHO*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* FONTE PARA OS TEXTOS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
 }
-.fa-python, .fa-c, .fa-java, .fa-html5 {
-    font-size: 50px;
+
+img {
+    width: 100%;
+    display: flex;
 }
-summary {
-    list-style-type: '★~';
-    color: #4a2b1a;
+
+a {
+    text-decoration: none;
 }
-details[open] summary {
-    list-style-type: '☆~';
-    color: #4a2b1a;
+
+body {
+    background-color: #1b0f4f;
 }
-detail ul {
-    text-align: center;
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
 }
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+.link a{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #d7c8e9;
+}
+
+.link a:hover{
+    color: #f2edf8;
+}
+
+.link a:hover::after{
+    width: 100%;
+    color: #f2edf8;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d7c8e9;
+    transition: all 0.3s ease;
+}
+
+.btn{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    padding: 1.1rem 2.5rem;
+    color: #1b0f4f;
+    background-color: #d7c8e9;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* CABEÇALHO */
