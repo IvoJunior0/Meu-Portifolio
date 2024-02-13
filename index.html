@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4bb4dfed16.js" crossorigin="anonymous"></script>
 
@@ -9,7 +12,6 @@
 </head>
 
 <body>
-
     <!-- BARRA DE NAVEGAÇÃO -->
     <nav>
         <div class="nav-logo">
@@ -27,15 +29,20 @@
     </nav>
 
     <!-- CABEÇALHO -->
-    <header>
-        <img src="imagens/tomodachi_bg.jpg" class="header-background">
-        <h1 class="titulo-cabeçalho">Olá, me chamo <span class="nome">Ivo Junior</span></h1>
-        <p> e seja bem-vindo(a) ao meu portifólio</p>
-    </header>
-
-    <!-- PARTE PRINCIPAL DO PORTIFOLIO -->
-    <main class="container">
-    </main>
+    <div class="wrapper">
+        <!-- BACKGROUND DO TOMODACHI -->
+        <div class="cols cols1">
+            <div class="imgbox">
+                <img src="imagens/tomodachi_bg.jpg">
+            </div>
+        </div>
+        <!-- O TEXTO DE SAUDAÇÕES -->
+        <div class="cols cols0">
+            <span class="topline">Olá! me chamo</span>
+            <h1>Ivo Junior</h1>
+            <p>Seja bem-vindo(a) ao meu portifólio <span class="emoji">🤠</span></p>
+        </div>
+    </div>
 </body>
 
 </html>
