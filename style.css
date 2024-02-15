@@ -19,6 +19,7 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 img {
@@ -32,6 +33,12 @@ a {
 
 body {
     background-color: #1b0f4f;
+}
+
+hr {
+    color: black;
+    background-color: white;
+    height: 4px;
 }
 
 /* BARRA DE NAVEGAÇÃO */
@@ -160,7 +167,7 @@ h1 {
     font-style: normal;
 }
 
-p {
+.cols0 p {
     display: block;
     font-family: 'Nunito';
     font-weight: bold;
@@ -168,4 +175,42 @@ p {
     color: #feb3fe;
     background-color: #1b0f4f;
     border-radius: 10px;
+}
+
+/* SOBRE MIM */
+
+.sobre-mim {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #080412;
+}
+
+.texto-sobremim {
+    color: #CFCAE0;
+    text-align: center;
+    animation-name: inicio-cabecalho;
+    animation-duration: 1s;
+}
+
+.texto-sobremim h2{
+    font-family: 'Josefin Sans';
+    font-weight: 900;
+    font-size: 8vw;
+    margin: 5% 25%;
+}
+
+.texto-sobremim p {
+    font-family: 'Nunito';
+    font-size: 1.3vw;
+    margin: 1% 12%;
+    font-weight: 100;
+    text-align: justify
+}
+
+.img-sm img {
+    width: 100%;
+    text-align: right;
+    animation-name: fadein;
+    animation-duration: 1s;
 }
