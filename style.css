@@ -99,6 +99,7 @@ nav {
     background-color: #d7c8e9;
     cursor: pointer;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -160,7 +161,13 @@ h1 {
     font-weight: 800;
     font-size: 10rem;
     display: block;
+    text-shadow: 1px 1px 20px #ff8bfc;
+    transition: all 0.5s ease;
+}
+
+.cols0 h1:hover{
     text-shadow: 2px 2px 50px #ff8bfc;
+    
 }
 
 .emoji {
@@ -179,38 +186,43 @@ h1 {
 
 /* SOBRE MIM */
 
-.sobre-mim {
+.sobremim{
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
     background-color: #080412;
+    overflow: hidden;
 }
 
-.texto-sobremim {
+.txt-sm{
     color: #CFCAE0;
-    text-align: center;
+    flex-direction: column;
     animation-name: inicio-cabecalho;
     animation-duration: 1s;
 }
 
-.texto-sobremim h2{
+.txt-sm h2{
     font-family: 'Josefin Sans';
-    font-weight: 900;
-    font-size: 8vw;
-    margin: 5% 25%;
+    font-size: 8em;
+    margin: 8% 5%;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #635375;
+    color: #635375;
+    transition: all 0.3s ease;
 }
 
-.texto-sobremim p {
-    font-family: 'Nunito';
-    font-size: 1.3vw;
+.txt-sm h2:hover{
+    color: #feb3fe;
+}
+
+.sobremim p{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
     margin: 1% 12%;
-    font-weight: 100;
-    text-align: justify
 }
 
-.img-sm img {
-    width: 100%;
-    text-align: right;
+.sobremim img {
+    width: auto;
     animation-name: fadein;
     animation-duration: 1s;
 }
