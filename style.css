@@ -261,7 +261,7 @@ h1 {
 .qualidades{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
@@ -294,4 +294,61 @@ h1 {
 .caixa-q:hover{
     width: 300px;
     height: 300px;
+}
+
+/* MEUS PROJETOS */
+
+.projetos {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 30px;
+}
+
+.projetos-left{
+    border: 2px solid #1c3f38;
+    color: #5b8b66;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.projetos-titulo {
+    font-family: 'Josefin Sans';
+    font-weight: 900;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.projetos-titulo:hover{
+    color: #8cad93;
+}
+
+.btn-projetos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-projetos a {
+    border: none;
+    background: transparent;
+    color: #1c3f38;
+    font-size: 60px;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.btn-projetos a:hover {
+    color: #5b8b66;
+    transition: all 0.3s ease;
+}
+
+.projetos-right img{
+    border-radius: 5px;
 }
