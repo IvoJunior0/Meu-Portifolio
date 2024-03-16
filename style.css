@@ -13,6 +13,12 @@
 /* FONTE PARA OS TEXTOS */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+    font-family: 'Validation';
+    src: url("Waiting-on-the-Bridge.ttf") format("truetype");
+    
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -104,6 +110,12 @@ nav {
 
 .btn:hover {
     background-color: #f2edf8;
+}
+
+@media screen and (max-width: 728px) {
+    .nav_links{
+        display: none;
+    }
 }
 
 /* CABEÇALHO */
@@ -306,49 +318,46 @@ h1 {
     gap: 30px;
 }
 
-.projetos-left{
-    border: 2px solid #1c3f38;
-    color: #5b8b66;
-    border-radius: 5px;
-    width: 50%;
+.projetos-intro {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 .projetos-titulo {
-    font-family: 'Josefin Sans';
-    font-weight: 900;
-    font-size: 4vw;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 15px;
+    margin-bottom: 25px;
     transition: all 0.3s ease;
+    color: #5b8b66;
+}
+
+.projetos-intro figure {
+    display: flex;
+    justify-content: center;
+}
+
+.projetos-titulo h2 {
+    font-family: 'Validation';
+    font-weight: 100;
+    font-size: 120px;
 }
 
 .projetos-titulo:hover{
     color: #8cad93;
 }
 
-.btn-projetos {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.gato-validation {
+    width: 180px;
+    filter: invert(50%) sepia(21%) saturate(585%) hue-rotate(82deg) brightness(95%) contrast(94%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-.btn-projetos a {
-    border: none;
-    background: transparent;
-    color: #1c3f38;
-    font-size: 60px;
-    transition: all 0.3s ease;
-    margin-top: 25px;
-    cursor: pointer;
-}
-
-.btn-projetos a:hover {
-    color: #5b8b66;
-    transition: all 0.3s ease;
-}
-
-.projetos-right img{
-    border-radius: 5px;
+.projeto-box {
+    height: 250px;
+    width: 300px;
+    background: #8cad93;
 }
