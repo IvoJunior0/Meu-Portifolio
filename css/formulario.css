@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Questrial&family=Quicksand:wght@300..700&family=Sawarabi+Mincho&family=Sulphur+Point:wght@300;400;700&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgb(108, 221, 230), rgb(100, 135, 189));
+}
+
+.contact {
+    max-width: 300px;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 25px;
+    color: #a9a9a9;
+}
+
+.contact-input::placeholder{
+    color: #a9a9a9;
+}
+
+.contact textarea{
+    height: 140px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    background: rgb(0, 13, 42);
+    transition: all .4s;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: rgb(19,88,122);
+}
+
+.vgod {
+    max-width: 450px;
+    animation: banner-animation 6s infinite;
+}
+
+.vgod img {
+    width: 100%
+}
+
+@keyframes banner-animation {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 880px) {
+    .vgod {
+        display: none;
+    }
+}

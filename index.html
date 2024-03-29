@@ -1,107 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="imagex/png" href="./imagens/yung_lixo_logo1.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/4bb4dfed16.js" crossorigin="anonymous"></script>
-
-    <title>Portifólio</title>
+    <title>Meu Portfólio</title>
 </head>
-
 <body>
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <nav>
-        <div class="nav-logo">
-            <a href="https://www.youtube.com/@yunglixo2147" target="_blank">
-                <img src="imagens/yung_lixo_logo1.png">
-            </a>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#inicio"><img src="images/logo.png"></a>
         </div>
-        <ul class="nav_links">
-            <li class="link"><a href="#inicio"><i class="fa-solid fa-house"></i> Início</a></li>
-            <li class="link"><a href="#sobremim">Sobre Mim</a></li>
-            <li class="link"><a href="#projetos">Projetos</a></li>
-            <li class="link"><a href="#habilidades">Habilidades</a></li>
+        <ul class="nav-links" id="menuList">
+            <li><a href="#sobremim" class="links"><i class="fa-solid fa-user"></i> Sobre mim</a></li>
+            <li><a href="#" class="links"><i class="fa-solid fa-folder"></i> Projetos</a></li>
+            <li><a href="#" class="links"><i class="fa-solid fa-star"></i> Habilidades</a></li>
         </ul>
-        <button class="btn">Contato</button>
+        <button class="btn-navbar" onclick="goToForm()">Contato</button>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
     </nav>
-
-    <!-- CABEÇALHO -->
-    <div class="wrapper" id="inicio">
-        <!-- BACKGROUND DO TOMODACHI -->
-        <div class="cols cols1">
-            <div class="imgbox">
-                <img src="imagens/tomodachi_bg.jpg">
-            </div>
-        </div>
-        <!-- O TEXTO DE SAUDAÇÕES -->
-        <div class="cols cols0">
-            <span class="topline">Olá! me chamo</span>
-            <h1>Ivo Junior</h1>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- SOBRE MIM -->
-    <div class="sobremim" id="sobremim">
-        <div class="img-sm"></div>
+    <!-- Banner -->
+    <section class="banner" id="inicio">
         <div class="container">
-            <div class="textbox-sm">
-                <div class="titulo-sm">
-                    <h2>SOBRE MIM</h2>
-                </div>
-                <div class="text-sm">
-                    <p>Sou estudante do Curso Técnico em Informática do IFMA, Campus Açailândia, desenvolvedor web em formação, amante de ciências exatas e fã número um do yun li 🎶</p>
+            <div class="frame">
+                <p>olá, me chamo</p>
+                <h1 class="title">Ivo Junior*~</h1>
+                <div class="title-links">
+                    <a href="https://github.com/IvoJunior0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/ivo_jr.s/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="qualidades">
-                <div class="caixa-q" id="q1">
-                    <h4><i class="fa-solid fa-graduation-cap"></i> Responsável</h4>
-                    <p>Sou uma pessoa disciplinada e focada que lida bem com as responsabilidades no ambiente de trabalho.</p>
-                </div>
-                <div class="caixa-q" id="q2">
-                    <h4><i class="fa-solid fa-exclamation"></i> Dedicado</h4>
-                    <p>Todo trabalho que é passado, tento me esforçar ao máximo para chegar no melhor resultado possível.</p>
-                </div>
-                <div class="caixa-q" id="q2">
-                    <h4><i class="fas fa-laptop-code"></i> Interessado</h4>
-                    <p>Me interesso por diversas áreas de conhecimento e conteúdos, com foco em matemática e informática.</p>
-                </div>
+            <div class="banner-img">
+                <img src="images/ldg.png">
             </div>
         </div>
-    </div>
-
-    <hr>
-
-    <!-- PROJETOS -->
-    <div class="projetos" id="projetos">
-        <div class="projetos-intro">
-            <div class="projetos-titulo">
-                <h2 class="projetos-texto">Meus Projetos</h2>
-            </div>
-            <figure>
-                <img src="/imagens/gato-validation.png" class="gato-validation">
-            </figure>
+    </section>
+    <!-- Sobre mim-->
+    <section class="sobremim" id="sobremim">
+        <div>
+            <h1>Sobre mim</h1>
+            <p></p>
         </div>
-        <div class="lista-projetos">
-            <div class="projeto-box">
-                <h4 class="pb-titulo">Sistema Solar</h4>
-            </div>
-            <div class="projeto-box">
-                <h4 class="pb-titulo">Galeria de fotos e vídeos</h4>
-            </div>
-            <div class="projeto-box">
-            </div>
-        </div>
-        <div class="projetos-github">
-            <p>Para mais informações:</p>
-            <a href="https://github.com/IvoJunior0?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-    </div>
+    </section>
+    <script src="js/index.js"></script>
 </body>
-
 </html>
