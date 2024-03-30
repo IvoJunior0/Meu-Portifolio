@@ -5,19 +5,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand";
+    color: white;
 }
 
 body {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 90px;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(180deg, rgb(108, 221, 230), rgb(100, 135, 189));
+    background-image: linear-gradient(180deg, rgb(254, 110, 109), rgb(219, 156, 45));
 }
 
 .contact {
     max-width: 300px;
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .contact h1 {
@@ -58,13 +65,13 @@ body {
     cursor: pointer;
     color: white;
     font-weight: 500;
-    background: rgb(0, 13, 42);
+    background: rgb(96, 73, 153);
     transition: all .4s;
     margin-top: 20px;
 }
 
 .btn:hover{
-    background: rgb(19,88,122);
+    background: rgb(133,101,168);
 }
 
 .vgod {
