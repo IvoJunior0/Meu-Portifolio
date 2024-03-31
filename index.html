@@ -14,14 +14,41 @@
         <div class="logo">
             <a href="#inicio"><img src="images/logo.png"></a>
         </div>
-        <ul class="nav-links" id="menuList">
+        <ul class="nav-links">
             <li><a href="#sobremim" class="links"><i class="fa-solid fa-user"></i> Sobre mim</a></li>
             <li><a href="#" class="links"><i class="fa-solid fa-folder"></i> Projetos</a></li>
             <li><a href="#" class="links"><i class="fa-solid fa-star"></i> Habilidades</a></li>
+            <li><a href="pages/formulario.html" class="links"><i class="fa-solid fa-comments"></i> Contato</a></li>
         </ul>
-        <button class="btn-navbar" onclick="goToForm()">Contato</button>
-        <div class="menu-icon">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        <div class="menu-icon" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <div class="menu-close" id="menu-close">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </div>
+            <div class="menu-content">
+                <div class="menu-pfp">
+                    <img src="https://avatars.githubusercontent.com/u/135394705?v=4" class="menu-img">
+                </div>
+                <div class="menu-name">
+                    <a href="">Ivo Junior</a>
+                </div>
+                <ul class="menu-list">
+                    <li><a href="#sobremim" class="links"><i class="fa-solid fa-user"></i> Sobre mim</a></li>
+                    <li><a href="#" class="links"><i class="fa-solid fa-folder"></i> Projetos</a></li>
+                    <li><a href="#" class="links"><i class="fa-solid fa-star"></i> Habilidades</a></li>
+                    <li><a href="pages/formulario.html" class="links"><i class="fa-solid fa-comments"></i> Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-contacts">
+                <div class="menu-contacts-links">
+                    <a href="https://github.com/IvoJunior0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/ivo_jr.s/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/559992272599" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:ivodossantossoaresjunior@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- Banner -->
@@ -34,7 +61,9 @@
                     <a href="https://github.com/IvoJunior0" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/ivo_jr.s/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://wa.me/559992272599" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:ivodossantossoaresjunior@gmail.com"><i class="fa-regular fa-envelope"></i></a>
                 </div>
+                <button class="btn-contact" onclick="goToForm()">Contato</button>
             </div>
             <div class="banner-img">
                 <img src="images/vgod.png">
@@ -43,14 +72,27 @@
     </section>
     <!-- Sobre mim-->
     <section class="sobremim" id="sobremim">
-        <h1 class="title2">~*Sobre mim</h1>
-        <div class="card">
-            <div class="card-front"><img src="images/mago-negro.webp"></div>
-            <div class="card-back"><img src="images/card-back.webp"></div>
-        </div>
         <div class="sobremim-text">
             <h1 class="title">~*Sobre mim</h1>
-            <p>Sou estudante do segundo ano do curso técnico em Informática no IFMA Campus Açailândia interessado pela área de tecnologia, com bastante foco no desenvolvimento de softwares</p>
+            <p>Sou estudante do segundo ano do curso técnico em Informática no IFMA Campus Açailândia interessado pela área de tecnologia, com foco em programação.</p>
+        </div>
+        <div class="qualidades">
+            <div class="qualidade">
+                <h2><i class="fa-solid fa-check"></i> Prestativo</h2>
+                <p>Sempre tento ajudar o máximo possível as pessoas que estão no mesmo ambiente que o meu, seja escolar ou não.</p>
+            </div>
+            <div class="qualidade">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Aprendizado contínuo</h2>
+                <p>Busco ficar atualizado das tecnologias e ferramentas novas que podem auxiliar em minhas atividades.</p>
+            </div>
+            <div class="qualidade">
+                <h2><i class="fa-solid fa-person"></i> Comunicação</h2>
+                <p>Tenho facilidade em criar relações com diversas pessoas e transmitir informações de forma clara.</p>
+            </div>
+            <div class="qualidade">
+                <h2><i class="fa-solid fa-book"></i> Inglês avançado</h2>
+                <p>Desde de pequeno sempre tive muito contato com conteudos em inglês, o que me tornou fluente e experiente na língua.</p>
+            </div>
         </div>
     </section>
     <script src="js/index.js"></script>

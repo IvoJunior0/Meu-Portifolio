@@ -10,6 +10,14 @@
     font-family: "Quicksand";
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Barra de navegação */
 
 .navbar {
@@ -20,7 +28,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    z-index: 1000000;
+    z-index: 100;
     padding: 15px;
 }
 
@@ -58,20 +66,6 @@
     padding: 15px;
 }
 
-.btn-navbar {
-    border: none;
-    border-radius: 10px;
-    padding: 15px 25px;
-    cursor: pointer;
-    background: rgb(0, 13, 42);
-    color: white;
-    transition: all .3s ease;
-}
-
-.btn-navbar:hover{
-    background: rgb(19,88,122);
-}
-
 .menu-icon {
     display: none;
 }
@@ -81,29 +75,81 @@
     font-size: 30px;
 }
 
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: calc(0px - 100vw);
+    max-width: 710px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #37325e, #0b0a12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    transition: all .7s ease;
+}
+
+.menu-close {
+    width: 100%;
+    text-align: end;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-pfp {
+    max-width: 200px;
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 200px;
+}
+
+.menu-name {
+    text-align: center;
+}
+
+.menu-name a {
+    text-decoration: none;
+    color:white;
+    font-weight: 800;
+    font-size: clamp(20px, 10vw, 50px);
+}
+
+.menu-contacts {
+    position: absolute; 
+    bottom: 15px; 
+    left: 0; 
+    z-index: 10;
+    max-width: 680px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-contacts-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.menu-contacts-links a {
+    color: white;
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        padding: 2px 10px;
-    }
-    .btn-navbar{
+    .nav-links {
         display: none;
-    }
-    .nav-links{
-        position: absolute;
-        top: 88px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        padding-bottom: 7px;
-        overflow: hidden;
     }
     .menu-icon {
         display: block;
-        cursor: pointer;
-        padding: 15px;
-    }
-    #menuList{
-        transition: all .7s;
     }
 }
 
@@ -130,7 +176,7 @@
 
 .title {
     font-size: clamp(20px, 14vw, 80px);
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: 900;
 }
 
@@ -144,6 +190,26 @@
     text-decoration: none;
     color: white;
     padding: 10px;
+    transition: all .3s ease;
+}
+
+.title-links a:hover {
+    color: rgb(0, 13, 42);
+}
+
+.btn-contact {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    background: rgb(0, 13, 42);
+    color: white;
+    transition: all .3s ease;
+    margin: 10px;
+}
+
+.btn-contact:hover{
+    background: rgb(19,88,122);
 }
 
 .banner-img {
@@ -183,52 +249,14 @@
 
 .sobremim {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 0 30px;
-    background: rgb(100, 135, 189);
-    height: 100vh;
+    flex-direction: column;
+    gap: 90px;
+    padding: 0 50px;
+    background-image: linear-gradient(180deg, rgb(100, 135, 189), #6e64bd);
+    min-height: 100vh;
     color: white;
-    gap: 30px;
-}
-
-.card {
-    width: 250px;
-    height: 356px;
-    display: inline;
-    position: relative;
-    perspective: 1500;
-    margin: 30px 0;
-}
-
-.card-front, .card-back{
-    position: absolute;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transition: all 1.3s ease;
-    border-radius: 10px;
-}
-
-.card-front img, .card-back img{
-    width: 100%;
-    height: 100%;
-}
-
-.card-front{
-    transform: rotateY(180deg);
-    overflow: hidden;
-}
-
-.card-back{
-    transform: rotateY(0deg);
-}
-
-.card:hover .card-front{
-    transform: rotateY(0deg);
-}
-
-.card:hover .card-back{
-    transform: rotateY(-180deg);
 }
 
 .sobremim-text {
@@ -236,7 +264,8 @@
     max-width: 550px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 15px;
 }
 
 .title2{
@@ -245,30 +274,38 @@
 
 .sobremim-text h1{
     text-align:center;
+    transition: all .6s ease;
+    cursor: pointer;
 }
+
+.sobremim-text h1:hover{
+    color: rgb(0, 13, 42);
+}
+
 
 .sobremim-text p{
     text-align:justify;
+    font-size: clamp(15px, 1.1vw, 30px);
 }
 
-@media (max-width: 890px) {
+.qualidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.qualidade {
+    max-width: 260px;
+}
+
+@media (max-width: 930px) {
     .sobremim{
         flex-direction: column;
         justify-content: center;
         text-align: center;
         gap: 20px;
-    }
-    .sobremim-text h1{
-        display: none;
-    }
-    .title2{
-        display: flex;
-        font-size: clamp(20px, 13.29vw, 80px);
-        margin: 10px 0;
-        font-weight: 900;
-    }
-    .card {
-        width: 175px;
-        height: 249px;
     }
 }

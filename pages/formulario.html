@@ -10,19 +10,22 @@
 <body>
     <div class="contact">
         <h1>contate-me*</h1>
-        <form onsubmit="emailSend(); reset(); return false;">
-            <input type="text" name="name" id="name" placeholder="Nome completo" class="contact-input" required>
-            <input type="email" name="email" id="email" placeholder="Email" class="contact-input" required>
-            <input type="text" name="phone" id="phone" placeholder="Telefone" class="contact-input" required>
-            <input type="text" name="website" id="website" placeholder="Website" class="contact-input">
-            <textarea name="message" id="message" placeholder="Mensagem" class="contact-input"></textarea requiredrequired>
+        <form action="https://formsubmit.co/sergeantguy321@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Nome completo" class="contact-input" required>
+            <input type="email" name="email" placeholder="Email" class="contact-input" required>
+            <input type="text" name="phone" placeholder="Telefone" class="contact-input" required>
+            <input type="text" name="website" placeholder="Website" class="contact-input">
+            <textarea name="message" placeholder="Mensagem" class="contact-input"></textarea required>
+                
             <button type="submit" class="btn">Enviar</button>
+
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display:none;">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
     <div class="vgod">
         <img src="../images/ldg.png">
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="../js/form.js"></script>
 </body>
 </html>
