@@ -142,6 +142,7 @@ a {
 
 .menu-contacts-links a {
     color: white;
+    font-size: 25px;
 }
 
 @media (max-width: 768px) {
@@ -205,6 +206,7 @@ a {
     color: white;
     transition: all .3s ease;
     margin: 10px;
+    font-weight: 600;
 }
 
 .btn-contact:hover{
@@ -298,17 +300,18 @@ a {
     align-items: center;
     flex-wrap:wrap;
     max-width: 1200px;
-    gap: 30px;
+    gap: 45px;
 }
 
 .qualidade {
-    max-width: 260px;
-    min-height: 260px;
+    max-width: 250px;
+    min-height: 250px;
     border: 1px solid white;
     border-radius: 10px;
     padding: 20px;
-    transition: .3s;
+    transition: all .3s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .qualidade:hover{
@@ -331,6 +334,6 @@ a {
         text-align: center;
         gap: 52px;
         padding-top: 104px;
-        padding-bottom: 30px;
+        padding-bottom: 45px;
     }
 }
