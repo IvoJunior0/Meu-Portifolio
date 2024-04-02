@@ -1,5 +1,5 @@
 const menuNavBar = document.getElementById("nav-menu");
-const menuClose = document.getElementById("menu-close");
+const menuLinks = document.querySelectorAll(".links");
 
 function closeMenu(){
     let menuNavBarWidth = menuNavBar.offsetWidth;
@@ -9,3 +9,9 @@ function closeMenu(){
 function openMenu(){
     menuNavBar.style.left = `0px`;
 }
+
+menuLinks.forEach((element) => {
+    element.addEventListener("click", () => {
+        closeMenu();
+    });
+});
