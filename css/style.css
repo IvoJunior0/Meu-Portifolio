@@ -30,6 +30,11 @@ a {
     align-items: center;
     z-index: 100;
     padding: 15px;
+    transition: all .4s;
+}
+
+.scrolled {
+    background: rgb(100, 135, 189);
 }
 
 .logo {
@@ -230,6 +235,7 @@ a {
 .banner-img img {
     width: 100%;
     animation: banner-animation 6s infinite;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -248,11 +254,6 @@ a {
     }
 }
 
-.wave svg {
-    background: rgb(100, 135, 189);
-    display: block;
-}
-
 /* Sobre mim */
 
 .sobremim {
@@ -261,16 +262,16 @@ a {
     align-items: center;
     padding: 0 50px;
     min-height: 100vh;
-    color: black;
-    background: white;
+    color: white;
+    background: rgb(100, 135, 189);
 }
 
 .sobremim-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap;
     max-width: 850px;
-    padding: 30px;
 }
 
 .sobremim-img {
@@ -282,12 +283,87 @@ a {
     object-fit: cover;
     max-height: 450px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .sobremim-text {
     max-width: 50%;
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.texto {
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: justify;
+}
+
+.mario {
+    min-width: 40px;
+    max-width: 12%;
+    cursor: pointer;
+}
+
+.mario-jumping {
+    content: url("../images/mario-jump.png");
+    animation: mario-jump linear .525s;
+}
+
+@keyframes mario-jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.habilidades {
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgb(30,39,46);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 2s ease;
+}
+
+.habilidades:hover {
+    background-image: linear-gradient(180deg, rgb(30,39,46), rgb(10, 43, 56));
+}
+
+.habilidades i {
+    font-size: 30px;
+}
+
+@media (max-width: 879px) {
+    .sobremim-container {
+        justify-content: center;
+    }
+    .sobremim-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
+        gap: 20px;
+    }
+    .sobremim-text h2 {
+        font-size: clamp(20px, 2vw, 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .habilidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
