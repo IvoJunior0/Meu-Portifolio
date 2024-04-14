@@ -366,4 +366,7 @@ a {
         align-items: center;
         width: 100%;
     }
+    .sobremim-img {
+        max-width: 240px;
+    }
 }
