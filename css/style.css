@@ -276,6 +276,7 @@ a {
 
 .sobremim-img {
     max-width: 330px;
+    cursor: pointer;
 }
 
 .ivo {

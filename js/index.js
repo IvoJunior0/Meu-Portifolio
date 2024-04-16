@@ -7,6 +7,10 @@ function goToLDG() {
     window.location.href = 'https://open.spotify.com/intl-pt/album/1lcaJxO3cm4fkXjbBDJoaa';
 }
 
+function goToNGV() {
+    window.location.href = 'https://open.spotify.com/intl-pt/album/51GDDti8N6Li0PjU4xaiyF';
+}
+
 // Menu responsivo
 const menuNavBar = document.getElementById("nav-menu");
 const menuLinks = document.querySelectorAll(".links"); // Opções do menu
