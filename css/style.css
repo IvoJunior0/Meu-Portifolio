@@ -373,12 +373,14 @@ a {
 .tecnologias {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 14px;
 }
 
 @media (max-width: 879px) {
     .sobremim-container {
         justify-content: center;
+        padding-top: 104px;
+        padding-bottom: 30px;
     }
     .sobremim-text {
         display: flex;
@@ -401,5 +403,11 @@ a {
     }
     .sobremim-img {
         max-width: 240px;
+    }
+}
+
+@media (max-width: 819px) {
+    .tecnologias {
+        display: none;
     }
 }
