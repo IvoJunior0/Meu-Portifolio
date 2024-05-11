@@ -4,7 +4,7 @@
 
 Repositório referente ao projeto da disciplina de **Desenvolvimento Web I**, no qual consiste na criação de um portfólio do aluno para apresentação no final do segundo bimestre.
 
-## Seções
+## :scroll: Seções
 
 - Início
 - Sobre mim
