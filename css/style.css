@@ -376,6 +376,14 @@ a {
     gap: 14px;
 }
 
+.tecnologias i {
+    transition: all .2s ease;
+}
+
+.tecnologias i:hover {
+    transform: scale(1.2);
+}
+
 @media (max-width: 879px) {
     .sobremim-container {
         justify-content: center;
