@@ -445,15 +445,17 @@ a {
 .skill-box {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 30px
+    gap: 30px;
 }
 
 .skill-box i {
     font-size: 30px;
+    align-self: center;
 }
 
 progress {
     appearance: none;
+    align-self: center;
 }
 
 @media (max-width: 768px) {
