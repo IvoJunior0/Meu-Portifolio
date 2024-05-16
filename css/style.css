@@ -8,6 +8,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Quicksand";
+    color: white;
 }
 
 ul {
@@ -417,5 +418,46 @@ a {
 @media (max-width: 819px) {
     .tecnologias {
         display: none;
+    }
+}
+
+/* Habilidades */
+
+.skills {
+    background-color: rgb(100, 135, 189);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container {
+    text-align: center;
+    max-width: 820px;
+    width: 100%;
+}
+
+.skills-title h1 {
+    font-size: 2.3rem;
+    margin-bottom: 45px;
+}
+
+.skill-box {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px
+}
+
+.skill-box i {
+    font-size: 30px;
+}
+
+progress {
+    appearance: none;
+}
+
+@media (max-width: 768px) {
+    .skill-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
