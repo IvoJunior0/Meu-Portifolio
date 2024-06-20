@@ -377,11 +377,11 @@ a {
     gap: 14px;
 }
 
-.tecnologias i {
+.icon {
     transition: all .2s ease;
 }
 
-.tecnologias i:hover {
+.icon:hover {
     transform: scale(1.2);
 }
 
@@ -437,28 +437,42 @@ a {
     width: 100%;
 }
 
+.skills-title {
+    margin-bottom: 45px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
 .skills-title h1 {
     font-size: 2.3rem;
-    margin-bottom: 45px;
 }
 
 .skill-box {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
+    background: rgb(19,88,122);
+    padding: 15px;
 }
 
 .skill-box i {
     font-size: 30px;
     align-self: center;
+    justify-self: center;
 }
 
 progress {
     appearance: none;
     align-self: center;
+    justify-self: center;
 }
 
 @media (max-width: 768px) {
+    .skills-container {
+        padding-top: 104px;
+        padding-bottom: 30px;
+    }
     .skill-box {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
