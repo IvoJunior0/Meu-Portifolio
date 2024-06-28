@@ -423,6 +423,14 @@ a {
 
 /* Habilidades */
 
+.kirby-div {
+    max-width: 160px;
+}
+
+.kirby {
+    width: 100%;
+}
+
 .skills {
     background-color: rgb(100, 135, 189);
     min-height: 100vh;
@@ -446,6 +454,13 @@ a {
 
 .skills-title h1 {
     font-size: 2.3rem;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .skill-box {
