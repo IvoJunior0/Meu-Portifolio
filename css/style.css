@@ -452,7 +452,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
-    background: rgb(19,88,122);
+
     padding: 15px;
 }
 
@@ -466,6 +466,18 @@ progress {
     appearance: none;
     align-self: center;
     justify-self: center;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.skill-box .colored {
+    background: rgb(0, 8, 24);
+    border-radius: 4px;
+    padding: 10px
 }
 
 @media (max-width: 768px) {
