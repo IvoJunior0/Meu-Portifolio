@@ -516,3 +516,22 @@ progress[value]::-webkit-progress-bar {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
+
+/* Meus Projetos */
+
+.projetos-title {
+    display: flex;
+    align-items: center;
+}
+
+.scott {
+    max-width: 170px;
+}
+
+.scott img {
+    width: 100%;
+}
+
+.projetos-title h1 {
+    font-size: 2.3rem;
+}
