@@ -192,14 +192,14 @@ a {
     font-size: clamp(20px, 2vw, 50px);
 }
 
-.title-links a{
+.title-links a i{
     text-decoration: none;
     color: white;
     padding: 10px;
     transition: all .3s ease;
 }
 
-.title-links a:hover {
+.title-links a i:hover {
     color: rgb(0, 13, 42);
 }
 
@@ -467,8 +467,13 @@ a {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 30px;
-
-    padding: 15px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
 }
 
 .skill-box i {
@@ -495,10 +500,11 @@ progress[value]::-webkit-progress-bar {
     padding: 10px
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .skills-container {
         padding-top: 104px;
         padding-bottom: 30px;
+        padding: 30px;
     }
     .skill-box {
         grid-template-columns: repeat(2, minmax(0, 1fr));
