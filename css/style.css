@@ -591,10 +591,39 @@ justify-content: center;
     text-align: center;
 }
 
+.back a {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards-lang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-lang div {
+    width: 50px;
+}
+
+#react, #tailwind, #firebase {
+    width: 50px
+}
+
 #sis-solar {
     background-image: url("../images/espaco.jpg");
 }
 
 #galeria {
     background-image: url("../images/kurapika.jpg");
+}
+
+#java {
+    background-color: rgb(30 41 59);
+}
+
+#lupaspace {
+    background-color: rgb(20 83 45);
 }
