@@ -502,9 +502,10 @@ progress[value]::-webkit-progress-bar {
 
 @media (max-width: 890px) {
     .skills-container {
-        padding-top: 104px;
+        padding-top: 100px;
         padding-bottom: 30px;
-        padding: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .skill-box {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -519,6 +520,12 @@ progress[value]::-webkit-progress-bar {
 
 /* Meus Projetos */
 
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .projetos-title {
     display: flex;
     align-items: center;
@@ -532,6 +539,10 @@ progress[value]::-webkit-progress-bar {
     width: 100%;
 }
 
+.scott img:hover {
+    content: url("../images/scott2.gif");
+}
+
 .projetos-title h1 {
     font-size: 2.3rem;
 }
@@ -541,12 +552,13 @@ progress[value]::-webkit-progress-bar {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 45px;
+    max-width: 1024px;
 }
 
 .card-container{
-    width: 218px;
-    height: 320px;
+    width: 194px;
+    height: 284px;
     -webkit-perspective: 1500;
     perspective: 1500;
 }
@@ -626,4 +638,14 @@ justify-content: center;
 
 #lupaspace {
     background-color: rgb(20 83 45);
+}
+
+@media (max-width: 879px) {
+    .projetos-container {
+        justify-content: center;
+        padding-top: 104px;
+        padding-bottom: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
