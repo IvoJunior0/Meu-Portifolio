@@ -658,7 +658,27 @@ justify-content: center;
 /* Footer */
 
 .footer {
-    background-image: linear-gradient(180deg, rgb(100, 135, 189), #1e2838);
+    /* background-image: linear-gradient(180deg, rgb(100, 135, 189), #1e2838); */
+    background-color: rgb(100, 135, 189);
+}
+
+.top {
+    position: relative;
+}
+
+.quote{
+    max-width: 75px;
+}
+
+.finn-jake {
+    max-width: 130px;
+    position: absolute;
+    right: 15px;
+    top: -14px;
+}
+
+.quote img, .finn-jake img {
+    width: 100%;
 }
 
 .grass, .dirt {
@@ -720,4 +740,10 @@ justify-content: center;
 
 .text-footer {
     font-family: 'Minecraft';
+}
+
+@media (max-width: 1024px) {
+    #d2lta {
+        display: none;
+    }
 }
