@@ -664,10 +664,13 @@ justify-content: center;
 
 .top {
     position: relative;
+    height: 84px;
+    background: red;
 }
 
 .quote{
     max-width: 75px;
+    position: absolute;
 }
 
 .finn-jake {
@@ -729,6 +732,12 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     gap: 45px;
+
+}
+
+.contact ul, .contact div {
+    width: 100%;
+    text-align: center;
 }
 
 .footer-icons-container {
@@ -740,10 +749,23 @@ justify-content: center;
 
 .text-footer {
     font-family: 'Minecraft';
+    font-size: clamp(15px, 1vw, 30px);
 }
 
 @media (max-width: 1024px) {
     #d2lta {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .finn-jake {
+        display: none;
+    }
+    .dirt {
+        padding: 15px;
+    }
+    .text-footer {
+        font-size: clamp(12px, .7vw, 20px);
     }
 }
