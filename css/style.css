@@ -665,12 +665,51 @@ justify-content: center;
 .top {
     position: relative;
     height: 84px;
-    background: red;
 }
 
 .quote{
     max-width: 75px;
     position: absolute;
+    animation: quote-walking 3.7s infinite linear;
+}
+
+@keyframes quote-walking {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    20% {
+        left: 75px;
+        transform: scaleX(1);
+    }
+    30% {
+        left: 75px;
+        transform: scaleX(1);
+    }
+    44% {
+        left: 75px;
+        transform: scaleX(-1);
+    }
+    55% {
+        left: 75px;
+        transform: scaleX(-1);
+    }
+    69% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+    77% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+    87% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0;
+        transform: scaleX(1);
+    }
 }
 
 .finn-jake {
