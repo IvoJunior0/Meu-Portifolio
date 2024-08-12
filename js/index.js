@@ -31,8 +31,6 @@ function openMenu(){
     menuNavBar.style.left = `0px`;
 }
 
-// Animação trigger
-
 // Easter-egg do mario
 const mario = document.querySelector('.mario');
 let marioJumping = false;
